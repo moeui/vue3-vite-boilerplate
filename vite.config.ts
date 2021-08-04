@@ -11,5 +11,9 @@ export default defineConfig({
       iconDirs: [path.resolve(process.cwd(), 'src/assets/icons')],
       // Specify symbolId format
       symbolId: 'icon-[dir]-[name]'
-  })]
+  })],
+  resolve: {
+    alias:
+      [{ find: '@', replacement: path.resolve(__dirname, 'src') }]
+  },
 })

@@ -6,7 +6,9 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "@moeui/storage": "^0.1.0",
     "vue": "^3.0.5",
+    "vue-i18n": "^9.1.7",
     "vue-router": "4",
     "vuex": "4"
   },
@@ -16,13 +18,16 @@
     "@typescript-eslint/parser": "^4.29.0",
     "@vitejs/plugin-vue": "^1.2.3",
     "@vue/compiler-sfc": "^3.0.5",
-    "eslint": "^7.28.0",
+    "@vue/eslint-config-typescript": "^7.0.0",
+    "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jest": "^24.4.0",
     "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-prettier-vue": "^3.1.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
-    "eslint-plugin-vue": "^7.11.1",
+    "eslint-plugin-vue": "^7.15.1",
     "prettier": "^2.3.2",
     "stylus": "^0.54.8",
     "typescript": "^4.3.2",
