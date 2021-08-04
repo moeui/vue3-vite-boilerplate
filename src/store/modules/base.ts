@@ -1,26 +1,27 @@
-import { ActionContext } from "vuex";
-import { IStore } from "../types";
+import { ActionContext } from 'vuex'
+
+import { IStore } from '../types'
 
 export type IBaseState = {
-    viewWidth: number;
-};
+    viewWidth: number
+}
 
 export default {
     namespaced: true,
     state: {
-        viewWidth: NaN,
+        viewWidth: NaN
     },
     mutations: {
-        ["SET_VIEW_WIDTH"](state: IBaseState, payload: number) {
-            state.viewWidth = payload;
-        },
+        ['SET_VIEW_WIDTH'](state: IBaseState, payload: number) {
+            state.viewWidth = payload
+        }
     },
     actions: {
         setViewWidth({ commit }: ActionContext<IBaseState, IStore>, payload: number) {
-            commit("SET_VIEW_WIDTH", payload);
-        },
+            commit('SET_VIEW_WIDTH', payload)
+        }
     },
     getters: {
-        viewWidth: (state: IBaseState) => state.viewWidth,
-    },
-};
+        viewWidth: (state: IBaseState) => state.viewWidth
+    }
+}

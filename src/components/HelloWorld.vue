@@ -8,20 +8,19 @@
 </template>
 
 <script lang="ts" setup>
-import { ref, defineProps } from "vue";
-const count = ref(0);
+import { defineProps, ref } from 'vue'
+const count = ref(0)
 const props = defineProps({
     msg: {
         type: String,
-        required: true,
-    },
-});
+        required: true
+    }
+})
 const color = ref('#42b983')
 </script>
 
 <style scoped>
 a {
-    color: v-bind(color)
+    color: v-bind(color);
 }
-
 </style>

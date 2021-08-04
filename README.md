@@ -16,3 +16,7 @@ Build production mode
 ```
 npm run build
 ```
+
+## Other
+
+If “rem” is not required, delete the “postcss-pxtorem” content of the “postcss.config.js” file
