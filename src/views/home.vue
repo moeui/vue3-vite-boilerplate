@@ -12,6 +12,7 @@
 </template>
 
 <script lang="ts" setup>
+import storage from '@moeui/storage'
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useRouter } from 'vue-router'
@@ -31,8 +32,10 @@ const changeViewWidth = () => {
 const changeLanguage = () => {
     if (locale.value === 'en_US') {
         locale.value = 'zh_CN'
+        storage.set('language', `zh_CN`)
     } else {
         locale.value = 'en_US'
+        storage.set('language', `en_US`)
     }
 }
 </script>

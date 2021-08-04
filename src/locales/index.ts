@@ -5,12 +5,8 @@ import enUS from './en_US.json'
 import zhCN from './zh_CN.json'
 
 const messages = {
-    en_US: {
-        ...enUS
-    },
-    zh_CN: {
-        ...zhCN
-    }
+    en_US: enUS,
+    zh_CN: zhCN
 }
 
 export const getLocale = () => {
